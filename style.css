@@ -51,11 +51,20 @@ img{
 .categoria-videos img{
     opacity: 0.5;
     height: 200px;
+    transition: .35s;
+    cursor: pointer;
 }
 
 .categoria-videos img:hover{
     opacity: 1.0;
     border: 1px rgb(51, 29, 133);
+    height: 300px;
+
+}
+
+.categoria-videos img:hover > :not(:hover){
+    opacity: .4;
+    transform: scale(0.9);
 }
 
 .categoria h2{
